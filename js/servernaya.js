@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Обработчик нажатия на "тап"
   document.getElementById("circle").addEventListener("click", async () => {
-      const tapResponse = await fetch('http://77.232.132.67/api/auth/tap', {
+      const tapResponse = await fetch('http://77.232.132.67/api/tap', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ token: token })
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // Получение списка заданий
-  const tasksResponse = await fetch('http://77.232.132.67/api/auth/tasks');
+  const tasksResponse = await fetch('http://77.232.132.67/api/tasks');
   const tasksData = await tasksResponse.json();
   const taskList = document.getElementById("taskList");
 
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       taskElement.addEventListener("click", async (event) => {
           event.preventDefault(); // Остановить переход по ссылке
 
-          const completeTaskResponse = await fetch('http://77.232.132.67/api/auth/complete-task', {
+          const completeTaskResponse = await fetch('http://77.232.132.67/api/complete-task', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ token: token, taskId: task._id })
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // Получение списка рефералов
-  const referralsResponse = await fetch('http://77.232.132.67/api/auth/referrals', {
+  const referralsResponse = await fetch('http://77.232.132.67/api/referrals', {
       headers: { 'Authorization': token }
   });
   const referralsData = await referralsResponse.json();
