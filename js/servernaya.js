@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const username = telegramData.username;
 
   // Авторизация пользователя
-  const authResponse = await fetch('https://77.232.132.67/api/auth', {
+  const authResponse = await fetch('http://77.232.132.67/api/auth', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id: userId, username: username })
