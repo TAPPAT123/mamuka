@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>main</title>
+	<meta charset="UTF-8">
+	<script src="https://telegram.org/js/telegram-web-app.js"></script> 
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240917223814">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	
+	
+   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="tabs">
+				<div class="tabs__container">
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">
+								<div class="tabs__title-birja tabs__title-birja--birja">
+									<div class="tabs__title-birja--img">
+										<picture><source srcset="img/birga/tab_lis.webp" type="image/webp"><img src="img/birga/tab_lis.png" alt="img"></picture>
+									</div>
+									<div class="tabs__title-birja--text">
+										<p>Биржа</p>
+									</div>
+								</div>
+							</button>
+							<button type="button" class="tabs__title">
+								<div class="tabs__title-birja tabs__title-birja--monej">
+									<div class="tabs__title-birja--img">
+										<picture><source srcset="img/zadanije/monej__tabs.webp" type="image/webp"><img src="img/zadanije/monej__tabs.png" alt="img"></picture>
+									</div>
+									<div class="tabs__title-birja--text">
+										<p>Задание</p>
+									</div>
+								</div>
+							</button>
+							<button type="button" class="tabs__title">
+								<div class="tabs__title-birja tabs__title-birja--frend">
+									<div class="tabs__title-birja--img">
+										<picture><source srcset="img/dryzja/tabs__frend.webp" type="image/webp"><img src="img/dryzja/tabs__frend.png" alt="img"></picture>
+									</div>
+									<div class="tabs__title-birja--text">
+										<p>Друзья</p>
+									</div>
+								</div>
+							</button>
+							<button type="button" class="tabs__title">
+								<div class="tabs__title-birja tabs__title-birja--mony">
+									<div class="tabs__title-birja--img">
+										<picture><source srcset="img/airdrop/tabs_mony.webp" type="image/webp"><img src="img/airdrop/tabs_mony.png" alt="img"></picture>
+									</div>
+									<div class="tabs__title-birja--text">
+										<p>Airdrop</p>
+									</div>
+								</div>
+							</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="birja">
+									<div class="birja__top top-birja">
+										<a href="#" class="top-birja__night">
+											
+										</a>
+
+
+										<div class="top-birja__lanch lanch">
+											<div class="lang lang_fixed">
+												<div id="ytWidget" style="display: none;"></div>
+												<div class="lang__link lang__link_select" data-lang-active>
+												
+												</div>
+												<div class="lang__list" data-lang-list>
+													<a class="lang__link lang__link_sub" data-ya-lang="ru">
+														<picture><source srcset="img/birga/lang__ru.webp" type="image/webp"><img class="lang__img" src="img/birga/lang__ru.png" alt="ru"></picture>
+													</a>
+													<a class="lang__link lang__link_sub" data-ya-lang="en">
+														<picture><source srcset="img/birga/lang__en.webp" type="image/webp"><img class="lang__img" src="img/birga/lang__en.png" alt="en"></picture>
+													</a>
+
+												</div>
+											</div>
+
+										</div>
+
+
+
+									</div>
+									<div class="circle">
+										<picture><source srcset="img/birga/fone__lise.webp" type="image/webp"><img id="circle" src="img/birga/fone__lise.png" alt="coin"></picture>
+                                        
+									</div>
+									<div class="birja__manej">
+										<div class="birja__manej--img" >
+											<picture><source srcset="img/birga/moneta.webp" type="image/webp"><img src="img/birga/moneta.png" alt="moneta" onclick="handleTap()"></picture>
+										</div>
+										<h2 class="score" id="score">0</h2>
+									</div>
+									<div class="birja__block block-birja">
+										<a href="https://t.me/FoxSwapcommunity" class="block-birja__inner inner-block">
+											<div class="inner-block__img inner-block__img--tlg">
+												<picture><source srcset="img/birga/telegram.webp" type="image/webp"><img src="img/birga/telegram.png" alt="telegram"></picture>
+											</div>
+											<div class="inner-block__text">
+												<p>Телеграмм <br> канал</p>
+											</div>
+										</a>
+										<a href="#" div class="block-birja__inner inner-block ">
+											<div class="inner-block__img inner-block__img--call">
+												<picture><source srcset="img/birga/calendar.webp" type="image/webp"><img src="img/birga/calendar.png" alt="calendar"></picture>
+											</div>
+											<div class="inner-block__text">
+												<p>Ежедневный<br> бонус</p>
+											</div>
+										</a>
+										<a div class="block-birja__inner inner-block inner-block--skoro">
+											<div class="inner-block__img--text">
+												<p>Скоро...</p>
+											</div>
+											<div class="inner-block__text inner-block__text--small">
+												<p>тут будет <br> что то интересное</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="zadanie">
+									<div class="zadanie__top">
+										<h2 class="zadanie__top--title">
+											<p>Получи монеты</p>
+										</h2>
+										<div class="zadanie__top--text">
+											<p>за выполнение заданий</p>
+										</div>
+									</div>
+									<div class="zadanije__button zadanije__inner">
+										<div class="zadanije__inner" id="taskList">
+                                            <h3 class="zadanije__button-title ">
+                                                <p>Основные</p>
+                                            </h3>
+                                            <!-- Задания будут добавляться сюда -->
+                                        </div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="frands">
+									<div class="zadanie__top">
+										<h2 class="zadanie__top--title">
+											<p>Пригласите друзей!</p>
+										</h2>
+										<div class="zadanie__top--text">
+											<p>Получите 25 000 монет за каждого друга</p>
+										</div>
+									</div>
+									<div class="frands__bonus">
+										<p id="referralLink" class="input"></p>  <button id="copyButton" class="button frands__copy"></button>
+									  </div>
+									<div class="zadanije__button zadanije__inner">
+										<div class="zadanije__inner">
+											<h3 class="zadanije__button-title ">
+											
+											</h3>
+											
+											
+										</div>
+										<div class="frands__inner">
+											<div class="frands__refrech">
+												<h3 class="zadanije__button-title ">
+													<p>Список ваших друзей</p>
+												</h3>
+												<button type="submit" class="button frands__button">
+													<picture><source srcset="img/dryzja/Refresh.webp" type="image/webp"><img src="img/dryzja/Refresh.png" alt="Refresh"></picture>
+												</button>
+											</div>
+											<div class="frands__textarea">
+												<ol class="textarea__ul">
+																
+
+														</ol> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="airdrop">
+									<div class="airdrop__bg">
+										<picture><source srcset="img/airdrop/bg__lis.webp" type="image/webp"><img src="img/airdrop/bg__lis.png" alt="bg"></picture>
+									</div>
+									<h2 class="airdrop__title">
+										<p>AirDrop</p>
+									</h2>
+									<div class="airdrop__textarea">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.js"></script>
+	<script src="js/servernaya.js"></script>
+  
+</body>
+
+</html>
